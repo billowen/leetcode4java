@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b51dc12d-29fe-466c-8220-9e99fa8085ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode4java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twosum/Solution1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/twosum/Solution2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/addtwonumbers/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/addtwonumbers/Solution1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577025387774</updated>
-      <workItem from="1577025393141" duration="822000" />
+      <workItem from="1577025393141" duration="2174000" />
     </task>
     <servers />
   </component>
