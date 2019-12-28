@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b51dc12d-29fe-466c-8220-9e99fa8085ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/addtwonumbers/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/addtwonumbers/Solution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/findevendigitis/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577025387774</updated>
-      <workItem from="1577025393141" duration="2174000" />
+      <workItem from="1577025393141" duration="3464000" />
+      <workItem from="1577524454876" duration="432000" />
     </task>
     <servers />
   </component>
@@ -79,5 +79,9 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="103" key="#Project_Structure/0.0.1368.882@0.0.1368.882" timestamp="1577025448759" />
+    <state x="380" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1577524460445">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="380" y="269" key="com.intellij.ide.util.TipDialog/0.0.1368.882@0.0.1368.882" timestamp="1577524460445" />
   </component>
 </project>
