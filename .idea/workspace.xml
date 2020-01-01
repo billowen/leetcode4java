@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b51dc12d-29fe-466c-8220-9e99fa8085ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/queue/MyCircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/MovingAverage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jewelsandstones/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jewelsandstones/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,7 @@
       <workItem from="1577025393141" duration="3464000" />
       <workItem from="1577524454876" duration="432000" />
       <workItem from="1577802254979" duration="1529000" />
-      <workItem from="1577856917424" duration="5806000" />
+      <workItem from="1577856917424" duration="6919000" />
     </task>
     <servers />
   </component>
@@ -110,6 +109,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="103" key="#Project_Structure/0.0.1368.882@0.0.1368.882" timestamp="1577025448759" />
+    <state x="446" y="62" key="#com.intellij.ide.util.MemberChooser" timestamp="1577863439361">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="446" y="62" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1577863439361" />
     <state x="215" y="0" key="CommitChangelistDialog2" timestamp="1577863273327">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
