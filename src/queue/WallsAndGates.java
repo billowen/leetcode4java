@@ -4,86 +4,47 @@ import java.util.*;
 
 public class WallsAndGates {
 
-    private static final int INF = 2147483647;
-
-    class Node {
-        private int row;
-        private int col;
-
-        public Node(int row, int y) {
-            this.row = row;
-            this.col = y;
-        }
-
-        public int getRow() {
-            return row;
-        }
-
-        public void setRow(int row) {
-            this.row = row;
-        }
-
-        public int getCol() {
-            return col;
-        }
-
-        public void setCol(int col) {
-            this.col = col;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Node node = (Node) o;
-            return row == node.row &&
-                    col == node.col;
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(row, col);
-        }
-    }
+    private static final int INF = Integer.MAX_VALUE;
+    private static final int GATE = 0;
+    private static final List<int[]> DIRECTIONS = Arrays.asList(
+            new int[] {1, 0},
+            new int[] {-1, 0},
+            new int[] {0, 1},
+            new int[] {0, -1}
+    );
 
     public void wallsAndGates(int[][] rooms) {
-        Queue<Node> queue = new LinkedList<>();
+        Queue<int[]> queue = new LinkedList<>();
 
         // find the start room
         int rows = rooms.length;
         if (rows == 0) return;
+
         int cols = rooms[0].length;
-        for (int i = 0; i < rooms.length; i++) {
-            for (int j = 0; j < rooms[i].length; j++) {
-                if (rooms[i][j] == 0) {
-                    queue.offer(new Node(i, j));
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (rooms[i][j] == GATE) {
+                    queue.offer(new int[]{i, j});
                 }
             }
         }
 
-        int step = 0;
-        Set<Node> processed = new HashSet<>();
         while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                Node curNode = queue.poll();
-                if (processed.contains(curNode)) continue;
-                rooms[curNode.getRow()][curNode.getCol()] = step;
-                if (curNode.getRow() - 1 >= 0 && rooms[curNode.getRow() - 1][curNode.getCol()] == INF) {
-                    queue.offer(new Node(curNode.getRow() - 1, curNode.getCol()));
+                int[] curNode = queue.poll();
+                int row = curNode[0];
+                int col = curNode[1];
+                for (int[] dir : DIRECTIONS) {
+                    int r = row + dir[0];
+                    int c = col + dir[1];
+                    if (r < 0 || c < 0 || r >= rows || c>= cols || rooms[r][c] != INF) {
+                        continue;
+                    }
+                    rooms[r][c] = rooms[row][col] + 1;
+                    queue.offer(new int[] {r, c});
                 }
-                if (curNode.getRow() + 1 < rows && rooms[curNode.getRow() + 1][curNode.getCol()] == INF) {
-                    queue.offer(new Node(curNode.getRow() + 1, curNode.getCol()));
-                }
-                if (curNode.getCol() - 1 >= 0 && rooms[curNode.getRow()][curNode.getCol()-1] == INF) {
-                    queue.offer(new Node(curNode.getRow(), curNode.getCol() - 1));
-                }
-                if (curNode.getCol() + 1 < cols && rooms[curNode.getRow()][curNode.getCol()+1] == INF) {
-                    queue.offer(new Node(curNode.getRow(), curNode.getCol() + 1));
-                }
-                processed.add(curNode);
             }
-            step += 1;
         }
     }
 
